@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/botaoCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CalendarView"
+        app:layout_constraintBottom_toTopOf="@+id/botaoProgressBarHorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/botaoProgressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoVideoView"
+        app:layout_constraintTop_toBottomOf="@+id/botaoImageView" />
+
+    <Button
+        android:id="@+id/botaoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCalendario"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <Button
+        android:id="@+id/botaoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageView"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCalendario"
+        app:layout_constraintEnd_toStartOf="@+id/botaoWebView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botaoWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCalendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botaoVideoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VideoView"
+        app:layout_constraintBottom_toTopOf="@+id/botaoProgressBarHorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/botaoCalendario"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoView"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <Button
+        android:id="@+id/botaoProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSeekBarDiscrete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoCalendario"
+        app:layout_constraintTop_toBottomOf="@+id/botaoWebView" />
+
+    <Button
+        android:id="@+id/botaoProgressBarHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProgressBarHz"
+        app:layout_constraintBottom_toTopOf="@+id/botaoRatingBar"
+        app:layout_constraintEnd_toStartOf="@+id/botaoSeekBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoCalendario" />
+
+    <Button
+        android:id="@+id/botaoSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SeekBar"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSearchView"
+        app:layout_constraintEnd_toStartOf="@+id/botaoSeekBarDiscrete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoProgressBarHorizontal"
+        app:layout_constraintTop_toBottomOf="@+id/botaoCalendario" />
+
+    <Button
+        android:id="@+id/botaoSeekBarDiscrete"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="seekbardiscrete"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSearchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/botaoProgressBar" />
+
+    <Button
+        android:id="@+id/botaoRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ratingbar"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSurfaceView"
+        app:layout_constraintEnd_toStartOf="@+id/botaoSearchView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoProgressBarHorizontal" />
+
+    <Button
+        android:id="@+id/botaoSearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="searchview"
+        app:layout_constraintBottom_toTopOf="@+id/botaoHorizontalDivider"
+        app:layout_constraintEnd_toStartOf="@+id/botaoTextureView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoRatingBar"
+        app:layout_constraintTop_toBottomOf="@+id/botaoSeekBarDiscrete" />
+
+    <Button
+        android:id="@+id/botaoTextureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textureview"
+        app:layout_constraintBottom_toTopOf="@+id/botaoHorizontalDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoSearchView"
+        app:layout_constraintTop_toBottomOf="@+id/botaoSeekBarDiscrete" />
+
+    <Button
+        android:id="@+id/botaoSurfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="surfaceview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaoHorizontalDivider"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoRatingBar" />
+
+    <Button
+        android:id="@+id/botaoHorizontalDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="horizontalDV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaoVerticalDivider"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoSurfaceView"
+        app:layout_constraintTop_toBottomOf="@+id/botaoSearchView" />
+
+    <Button
+        android:id="@+id/botaoVerticalDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="verticalDV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoHorizontalDivider"
+        app:layout_constraintTop_toBottomOf="@+id/botaoTextureView" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="495dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="368dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIDGETS"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoView"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="190sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/android"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="14dp" />
+
+</android.support.constraint.ConstraintLayout>
