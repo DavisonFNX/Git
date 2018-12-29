@@ -16,12 +16,22 @@ public class MainActivity extends AppCompatActivity {
     private TextView textExibir;
     private Button botaoSeguinte;
 
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("Resultado", textExibir.getText().toString());
 
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(savedInstanceState != null){
+            String melhorEscolha = savedInstanceState.getString("Resultado");
+            textExibir.setText(melhorEscolha);
+        }
 
 
 
